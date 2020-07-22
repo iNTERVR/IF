@@ -19,7 +19,7 @@ namespace Inter.Installer
         {
             Container.BindInstance(settings).IfNotBound();
 
-            checkEngineInstaller("InterFramework.InterVR");
+            checkEngineInstaller("if.InterVR");
         }
 
         void checkEngineInstaller(string path)
@@ -27,6 +27,8 @@ namespace Inter.Installer
             var prefab = Resources.Load(path) as GameObject;
             if (prefab == null)
                 return;
+
+            Debug.Log($"found {path} library to install");
 
             var instance = GameObject.Instantiate(prefab.gameObject);
             instance.transform.SetParent(ProjectContext.Instance.transform, false);
