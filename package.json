@@ -1,0 +1,15 @@
+{
+  "name": "com.intervr.if.inter",
+  "version": "1.0.0",
+  "displayName": "if.Inter",
+  "description": "iNTERVR framework - basement library",
+  "unity": "2019.4",
+  "license": "MIT",
+  "unityRelease": "4f1",
+  "dependencies": {
+    "com.intervr.ecsrx": "https://github.com/iNTERVR/ecsrx.git#upm",
+    "com.intervr.ecsrx.unity": "https://github.com/iNTERVR/ecsrx.unity.git#upm",
+    "com.intervr.neuecc.unirx": "https://github.com/iNTERVR/UniRx.git#upm",
+    "com.intervr.modesttree.zenject": "https://github.com/iNTERVR/Zenject.git#upm"
+  }
+}
