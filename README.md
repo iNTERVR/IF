@@ -14,7 +14,7 @@ add to manifest.json in packages at unity root
 "com.unity.intervr.modesttree.zenject": "https://github.com/iNTERVR/zenject.git#upm",   
 "com.unity.intervr.manusvr": "https://github.com/iNTERVR/manusvr.git#upm",   
 
-## Install InterVR Package
+## Install Package
 > "com.unity.intervr.if.inter": "https://github.com/iNTERVR/if.inter.git",
     
 
