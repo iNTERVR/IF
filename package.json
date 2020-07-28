@@ -1,15 +1,22 @@
 {
   "name": "com.unity.intervr.if.inter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "if Inter",
   "description": "iNTERVR framework - basement package, must have to installed before using any inter framework",
   "unity": "2019.4",
   "license": "MIT",
-  "unityRelease": "4f1",
+  "unityRelease": "5f1",
   "dependencies": {
     "com.unity.intervr.ecsrx": "4.0.0",
     "com.unity.intervr.ecsrx.unity": "3.0.0",
     "com.unity.intervr.neuecc.unirx": "8.0.0",
     "com.unity.intervr.modesttree.zenject": "9.0.0"
-  }
+  },
+  "samples": [
+    {
+      "displayName": "Prototype",
+      "description": "InterFramework Template",
+      "path": "Samples~/Prototype"
+    }
+  ]
 }
