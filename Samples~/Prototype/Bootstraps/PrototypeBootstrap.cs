@@ -12,12 +12,6 @@ namespace Inter.Prototype
         protected override void BindSystems()
         {
             base.BindSystems();
-
-            // inter system setup
-            Container.BindApplicableSystems(
-                "Inter.Systems",
-                "Inter.ViewResolvers"
-                );
         }
 
         protected override void LoadModules()
