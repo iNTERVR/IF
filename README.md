@@ -8,13 +8,13 @@ Unity 2019.4.x LTS
 add to manifest.json in packages at unity root
 
 ## Install base packages
-"com.unity.intervr.ecsrx": "https://github.com/iNTERVR/ecsrx.git#upm",   
-"com.unity.intervr.ecsrx.unity": "https://github.com/iNTERVR/ecsrx.unity.git#upm",   
-"com.unity.intervr.neuecc.unirx": "https://github.com/iNTERVR/unirx.git#upm",   
-"com.unity.intervr.modesttree.zenject": "https://github.com/iNTERVR/zenject.git#upm",   
-"com.unity.intervr.manusvr": "https://github.com/iNTERVR/manusvr.git#upm",   
+"com.intervr.ecsrx": "https://github.com/iNTERVR/ecsrx.git#upm",   
+"com.intervr.ecsrx.unity": "https://github.com/iNTERVR/ecsrx.unity.git#upm",   
+"com.intervr.neuecc.unirx": "https://github.com/iNTERVR/unirx.git#upm",   
+"com.intervr.modesttree.zenject": "https://github.com/iNTERVR/zenject.git#upm",   
+"com.intervr.manusvr": "https://github.com/iNTERVR/manusvr.git#upm",   
 
 ## Install Package
-> "com.unity.intervr.if.inter": "https://github.com/iNTERVR/if.inter.git",
+> "com.intervr.if.inter": "https://github.com/iNTERVR/if.inter.git",
     
 
