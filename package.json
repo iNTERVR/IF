@@ -6,10 +6,10 @@
   "unity": "2019.4",
   "license": "MIT",
   "dependencies": {
-    "com.intervr.ecsrx": "4.0.0",
-    "com.intervr.ecsrx.unity": "3.0.0",
-    "com.intervr.neuecc.unirx": "8.0.0",
-    "com.intervr.modesttree.zenject": "9.0.0"
+    "com.intervr.ecsrx": "https://github.com/iNTERVR/ecsrx.git#upm",
+    "com.intervr.ecsrx.unity": "https://github.com/iNTERVR/ecsrx.unity.git#upm",
+    "com.intervr.neuecc.unirx": "https://github.com/iNTERVR/UniRx.git#upm",
+    "com.intervr.modesttree.zenject": "https://github.com/iNTERVR/Zenject.git#upm"
   },
   "samples": [
     {
