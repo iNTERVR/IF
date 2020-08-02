@@ -14,10 +14,11 @@ namespace Inter.Components
         public bool SmoothRotation { get; set; }
         public Vector3 OffsetPosition { get; set; }
         public Vector3 OffsetRotation { get; set; }
-        public Vector3 CalculatedPosition { get; set; }
-        public Vector3 CalculatedRotation { get; set; }
         public IEntity FollowTargetEntity { get; set; }
         public IEntity FollowSourceEntity { get; set; }
         public float MaxDistanceDeltaPerFrame { get; set; }
+
+        public Vector3 CalculatedPosition;
+        public Vector3 CalculatedRotation;
     }
 }
