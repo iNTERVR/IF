@@ -2,9 +2,9 @@
 using UnityEngine;
 using Zenject;
 
-namespace InterVR.Unity.SDK.InterFramework.Prototype.Installer
+namespace InterVR.IF.Prototype.Installer
 {
-    [CreateAssetMenu(fileName = "PrototypeSettings", menuName = "InterVR/InterFramework/Prototype/Settings")]
+    [CreateAssetMenu(fileName = "PrototypeSettings", menuName = "InterVR/IF/Prototype/Settings")]
     public class PrototypeInstaller : ScriptableObjectInstaller<PrototypeInstaller>
     {
 #pragma warning disable 0649

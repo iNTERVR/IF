@@ -3,7 +3,7 @@ using EcsRx.Entities;
 using EcsRx.Extensions;
 using UnityEngine;
 
-namespace InterVR.Unity.SDK.InterFramework.Prototype.Components
+namespace InterVR.IF.Prototype.Components
 {
     public class RotateYaw : IComponent
     {
