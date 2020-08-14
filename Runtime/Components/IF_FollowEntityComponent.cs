@@ -7,7 +7,7 @@ namespace InterVR.IF.Components
 {
     public class IF_FollowEntity : IComponent
     {
-        public UpdateMomentType UpdateMoment { get; set; }
+        public IF_UpdateMomentType UpdateMoment { get; set; }
         public bool FollowPosition { get; set; }
         public bool FollowRotation { get; set; }
         public bool SmoothPosition { get; set; }

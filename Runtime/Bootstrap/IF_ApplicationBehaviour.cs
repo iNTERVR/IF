@@ -24,7 +24,7 @@ namespace InterVR.IF
         {
             base.LoadModules();
 
-            Container.LoadModule<IF_ToolModule>();
+            Container.LoadModule<IF_ToolModules>();
         }
 
         protected override void LoadPlugins()

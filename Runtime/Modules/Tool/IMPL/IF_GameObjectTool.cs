@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace InterVR.IF.Modules
 {
-    public class GameObjectTool : IGameObjectTool
+    public class IF_GameObjectTool : IF_IGameObjectTool
     {
         public GameObject InstantiateWithInit(GameObject prefab, Transform parent = null)
         {

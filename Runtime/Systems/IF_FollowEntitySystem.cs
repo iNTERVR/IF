@@ -31,9 +31,9 @@ namespace InterVR.IF.Systems
             subscriptionsPerEntity.Add(entity, subscriptions);
 
             var followEntity = entity.GetComponent<IF_FollowEntity>();
-            if (followEntity.UpdateMoment == UpdateMomentType.Update) Observable.EveryUpdate().Subscribe(x => follow(entity, followEntity)).AddTo(subscriptions);
-            else if (followEntity.UpdateMoment == UpdateMomentType.FixedUpdate) Observable.EveryFixedUpdate().Subscribe(x => follow(entity, followEntity)).AddTo(subscriptions);
-            else if (followEntity.UpdateMoment == UpdateMomentType.LateUpdate) Observable.EveryLateUpdate().Subscribe(x => follow(entity, followEntity)).AddTo(subscriptions);
+            if (followEntity.UpdateMoment == IF_UpdateMomentType.Update) Observable.EveryUpdate().Subscribe(x => follow(entity, followEntity)).AddTo(subscriptions);
+            else if (followEntity.UpdateMoment == IF_UpdateMomentType.FixedUpdate) Observable.EveryFixedUpdate().Subscribe(x => follow(entity, followEntity)).AddTo(subscriptions);
+            else if (followEntity.UpdateMoment == IF_UpdateMomentType.LateUpdate) Observable.EveryLateUpdate().Subscribe(x => follow(entity, followEntity)).AddTo(subscriptions);
         }
 
         public void Teardown(IEntity entity)

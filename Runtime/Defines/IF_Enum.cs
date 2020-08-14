@@ -1,6 +1,6 @@
 ﻿namespace InterVR.IF.Defines
 {
-    public enum UpdateMomentType
+    public enum IF_UpdateMomentType
     {
         Update,
         FixedUpdate,

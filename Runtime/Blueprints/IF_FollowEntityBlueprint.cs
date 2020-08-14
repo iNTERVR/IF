@@ -9,7 +9,7 @@ namespace InterVR.IF.Blueprints
 {
     public class IF_FollowEntityBlueprint : IBlueprint
     {
-        public IF_FollowEntityBlueprint(UpdateMomentType updateMoment,
+        public IF_FollowEntityBlueprint(IF_UpdateMomentType updateMoment,
             IEntity targetEntity,
             IEntity sourceEntity,
             bool followPosition,
@@ -32,7 +32,7 @@ namespace InterVR.IF.Blueprints
             SmoothRotation = smoothRotation;
         }
 
-        public UpdateMomentType UpdateMoment { get; }
+        public IF_UpdateMomentType UpdateMoment { get; }
         public IEntity TargetEntity { get; }
         public IEntity SourceEntity { get; }
         public bool FollowPosition { get; }
