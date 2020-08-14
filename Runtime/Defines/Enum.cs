@@ -1,4 +1,4 @@
-﻿namespace Inter.Defines
+﻿namespace InterVR.Unity.SDK.InterFramework.Defines
 {
     public enum UpdateMomentType
     {

@@ -1,14 +1,11 @@
-﻿using EcsRx.Infrastructure.Dependencies;
-using EcsRx.Systems;
-using System;
-using System.Linq;
+﻿using System;
 using UnityEngine;
 using Zenject;
 
-namespace Inter.Installer
+namespace InterVR.Unity.SDK.InterFramework.Installer
 {
-    [CreateAssetMenu(fileName = "InterSettings", menuName = "Inter/Settings")]
-    public class InterInstaller : ScriptableObjectInstaller<InterInstaller>
+    [CreateAssetMenu(fileName = "InterFrameworkSettings", menuName = "InterVR/InterFramework/Settings")]
+    public class InterFrameworkInstaller : ScriptableObjectInstaller<InterFrameworkInstaller>
     {
 #pragma warning disable 0649
         [SerializeField]
@@ -19,10 +16,11 @@ namespace Inter.Installer
         {
             Container.BindInstance(settings).IfNotBound();
 
-            checkEngineInstaller("if.InterVR");
+            checkSDKInstaller("intervr.unity.sdk.steamvr");
+            checkSDKInstaller("intervr.unity.sdk.manusvr");
         }
 
-        void checkEngineInstaller(string path)
+        void checkSDKInstaller(string path)
         {
             var prefab = Resources.Load(path) as GameObject;
             if (prefab == null)
@@ -40,7 +38,7 @@ namespace Inter.Installer
         [Serializable]
         public class Settings
         {
-            public string Name = "Inter Installer";
+            public string Name = "InterFramework Installer";
         }
     }
 }

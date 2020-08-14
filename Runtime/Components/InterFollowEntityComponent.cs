@@ -1,9 +1,9 @@
-﻿using Inter.Defines;
+﻿using InterVR.Unity.SDK.InterFramework.Defines;
 using EcsRx.Components;
 using EcsRx.Entities;
 using UnityEngine;
 
-namespace Inter.Components
+namespace InterVR.Unity.SDK.InterFramework.Components
 {
     public class InterFollowEntity : IComponent
     {

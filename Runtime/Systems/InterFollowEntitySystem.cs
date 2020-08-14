@@ -1,5 +1,5 @@
-﻿using Inter.Components;
-using Inter.Defines;
+﻿using InterVR.Unity.SDK.InterFramework.Components;
+using InterVR.Unity.SDK.InterFramework.Defines;
 using EcsRx.Entities;
 using EcsRx.Extensions;
 using EcsRx.Groups;
@@ -11,7 +11,7 @@ using UniRx;
 using UnityEngine;
 using EcsRx.Collections.Database;
 
-namespace Inter.Systems
+namespace InterVR.Unity.SDK.InterFramework.Systems
 {
     public class InterFollowEntitySystem : ISetupSystem, ITeardownSystem
     {

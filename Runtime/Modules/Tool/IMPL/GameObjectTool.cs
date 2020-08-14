@@ -1,9 +1,7 @@
-﻿using Inter.Defines;
-using EcsRx.Unity.Dependencies;
-using System;
+﻿using EcsRx.Unity.Dependencies;
 using UnityEngine;
 
-namespace Inter.Modules.ToolModule
+namespace InterVR.Unity.SDK.InterFramework.Modules.ToolModule
 {
     public class GameObjectTool : IGameObjectTool
     {

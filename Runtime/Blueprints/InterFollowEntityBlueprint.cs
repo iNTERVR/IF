@@ -1,11 +1,11 @@
-﻿using Inter.Components;
-using Inter.Defines;
+﻿using InterVR.Unity.SDK.InterFramework.Components;
+using InterVR.Unity.SDK.InterFramework.Defines;
 using EcsRx.Blueprints;
 using EcsRx.Entities;
 using EcsRx.Extensions;
 using UnityEngine;
 
-namespace Inter.Blueprints
+namespace InterVR.Unity.SDK.InterFramework.Blueprints
 {
     public class InterFollowEntityBlueprint : IBlueprint
     {

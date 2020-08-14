@@ -1,7 +1,7 @@
 ﻿using EcsRx.Infrastructure.Dependencies;
 using EcsRx.Infrastructure.Extensions;
 
-namespace Inter.Modules.ToolModule
+namespace InterVR.Unity.SDK.InterFramework.Modules.ToolModule
 {
     public class ToolModuleSetupDependency : IDependencyModule
     {

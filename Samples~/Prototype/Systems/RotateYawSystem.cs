@@ -6,11 +6,11 @@ using EcsRx.Plugins.Views.Components;
 using System;
 using UniRx;
 using System.Collections.Generic;
-using Inter.Prototype.Components;
+using InterVR.Unity.SDK.InterFramework.Prototype.Components;
 using EcsRx.Unity.Extensions;
 using UnityEngine;
 
-namespace Inter.Prototype.Systems
+namespace InterVR.Unity.SDK.InterFramework.Prototype.Systems
 {
     public class RotateYawSystem : ISetupSystem, ITeardownSystem
     {
