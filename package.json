@@ -2,16 +2,16 @@
   "name": "com.intervr.if",
   "displayName": "iNTERVR IF",
   "description": "InterFramework of iNTERVR",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "unity": "2020.1",
   "keywords": [],
-  "homepage": "https://github.com/iNTERVR/unity.sdk.if#readme",
+  "homepage": "https://github.com/iNTERVR/IF#readme",
   "bugs": {
-    "url": "https://github.com/iNTERVR/unity.sdk.if/issues"
+    "url": "https://github.com/iNTERVR/IF/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iNTERVR/unity.sdk.if.git#upm"
+    "url": "git+https://github.com/iNTERVR/IF.git#upm"
   },
   "license": "MIT",
   "author": {
@@ -20,7 +20,7 @@
     "url": "https://github.com/iNTERVR"
   },
   "dependencies": {
-    "com.intervr.unity.extern.ecsrx": "1.5.0"
+    "com.intervr.ts.ecsrx.unity": "1.6.0"
   },
   "files": [
     "*.md",
