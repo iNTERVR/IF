@@ -1,11 +1,10 @@
 {
-  "name": "com.intervr.unity.sdk.if.inter",
-  "displayName": "if.Inter of iNTERVR Unity3D SDK",
+  "name": "com.intervr.unity.sdk.if",
+  "displayName": "InterFramework of iNTERVR Unity3D SDK",
   "description": "iNTERVR framework - basement package, must have to installed before using any inter framework",
-  "version": "0.1.0",
-  "unity": "2019.4",
-  "keywords": [
-  ],
+  "version": "0.2.0",
+  "unity": "2020.1",
+  "keywords": [],
   "homepage": "https://github.com/iNTERVR/unity.sdk.if.inter#readme",
   "bugs": {
     "url": "https://github.com/iNTERVR/unity.sdk.if.inter/issues"
