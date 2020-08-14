@@ -1,15 +1,15 @@
-﻿using InterVR.Unity.SDK.InterFramework.Components;
-using InterVR.Unity.SDK.InterFramework.Defines;
+﻿using InterVR.IF.Components;
+using InterVR.IF.Defines;
 using EcsRx.Blueprints;
 using EcsRx.Entities;
 using EcsRx.Extensions;
 using UnityEngine;
 
-namespace InterVR.Unity.SDK.InterFramework.Blueprints
+namespace InterVR.IF.Blueprints
 {
-    public class InterFollowEntityBlueprint : IBlueprint
+    public class IF_FollowEntityBlueprint : IBlueprint
     {
-        public InterFollowEntityBlueprint(UpdateMomentType updateMoment,
+        public IF_FollowEntityBlueprint(UpdateMomentType updateMoment,
             IEntity targetEntity,
             IEntity sourceEntity,
             bool followPosition,
@@ -45,7 +45,7 @@ namespace InterVR.Unity.SDK.InterFramework.Blueprints
 
         public void Apply(IEntity entity)
         {
-            entity.AddComponent(new InterFollowEntity()
+            entity.AddComponent(new IF_FollowEntity()
             {
                 UpdateMoment = UpdateMoment,
                 MaxDistanceDeltaPerFrame = MaxDistanceDeltaPerFrame,

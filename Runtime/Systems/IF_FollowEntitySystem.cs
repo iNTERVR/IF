@@ -1,5 +1,5 @@
-﻿using InterVR.Unity.SDK.InterFramework.Components;
-using InterVR.Unity.SDK.InterFramework.Defines;
+﻿using InterVR.IF.Components;
+using InterVR.IF.Defines;
 using EcsRx.Entities;
 using EcsRx.Extensions;
 using EcsRx.Groups;
@@ -11,16 +11,16 @@ using UniRx;
 using UnityEngine;
 using EcsRx.Collections.Database;
 
-namespace InterVR.Unity.SDK.InterFramework.Systems
+namespace InterVR.IF.Systems
 {
-    public class InterFollowEntitySystem : ISetupSystem, ITeardownSystem
+    public class IF_FollowEntitySystem : ISetupSystem, ITeardownSystem
     {
-        public IGroup Group => new Group(typeof(InterFollowEntity));
+        public IGroup Group => new Group(typeof(IF_FollowEntity));
 
         private Dictionary<IEntity, List<IDisposable>> subscriptionsPerEntity = new Dictionary<IEntity, List<IDisposable>>();
         private readonly IEntityDatabase entityDatabase;
 
-        public InterFollowEntitySystem(IEntityDatabase entityDatabase)
+        public IF_FollowEntitySystem(IEntityDatabase entityDatabase)
         {
             this.entityDatabase = entityDatabase;
         }
@@ -30,7 +30,7 @@ namespace InterVR.Unity.SDK.InterFramework.Systems
             var subscriptions = new List<IDisposable>();
             subscriptionsPerEntity.Add(entity, subscriptions);
 
-            var followEntity = entity.GetComponent<InterFollowEntity>();
+            var followEntity = entity.GetComponent<IF_FollowEntity>();
             if (followEntity.UpdateMoment == UpdateMomentType.Update) Observable.EveryUpdate().Subscribe(x => follow(entity, followEntity)).AddTo(subscriptions);
             else if (followEntity.UpdateMoment == UpdateMomentType.FixedUpdate) Observable.EveryFixedUpdate().Subscribe(x => follow(entity, followEntity)).AddTo(subscriptions);
             else if (followEntity.UpdateMoment == UpdateMomentType.LateUpdate) Observable.EveryLateUpdate().Subscribe(x => follow(entity, followEntity)).AddTo(subscriptions);
@@ -46,7 +46,7 @@ namespace InterVR.Unity.SDK.InterFramework.Systems
             }
         }
 
-        void follow(IEntity entity, InterFollowEntity followEntity)
+        void follow(IEntity entity, IF_FollowEntity followEntity)
         {
             if (entityDatabase.GetCollectionFor(followEntity.FollowSourceEntity) == null ||
                 entityDatabase.GetCollectionFor(followEntity.FollowTargetEntity) == null)
@@ -59,7 +59,7 @@ namespace InterVR.Unity.SDK.InterFramework.Systems
             if (followEntity.FollowRotation) followRotation(followEntity);
         }
 
-        void followPosition(InterFollowEntity followEntity)
+        void followPosition(IF_FollowEntity followEntity)
         {
             var sourceView = followEntity.FollowSourceEntity.GetGameObject();
             var targetView = followEntity.FollowTargetEntity.GetGameObject();
@@ -86,7 +86,7 @@ namespace InterVR.Unity.SDK.InterFramework.Systems
             transformToSource.position = followEntity.CalculatedPosition;
         }
 
-        void followRotation(InterFollowEntity followEntity)
+        void followRotation(IF_FollowEntity followEntity)
         {
             var sourceView = followEntity.FollowSourceEntity.GetGameObject();
             var targetView = followEntity.FollowTargetEntity.GetGameObject();

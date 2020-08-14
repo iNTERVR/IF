@@ -1,8 +1,8 @@
 {
-  "name": "com.intervr.unity.sdk.if",
-  "displayName": "InterFramework of iNTERVR Unity3D SDK",
-  "description": "iNTERVR framework",
-  "version": "0.3.0",
+  "name": "com.intervr.if",
+  "displayName": "iNTERVR IF",
+  "description": "InterFramework of iNTERVR",
+  "version": "0.1.0",
   "unity": "2020.1",
   "keywords": [],
   "homepage": "https://github.com/iNTERVR/unity.sdk.if#readme",

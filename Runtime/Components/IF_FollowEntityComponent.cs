@@ -1,11 +1,11 @@
-﻿using InterVR.Unity.SDK.InterFramework.Defines;
+﻿using InterVR.IF.Defines;
 using EcsRx.Components;
 using EcsRx.Entities;
 using UnityEngine;
 
-namespace InterVR.Unity.SDK.InterFramework.Components
+namespace InterVR.IF.Components
 {
-    public class InterFollowEntity : IComponent
+    public class IF_FollowEntity : IComponent
     {
         public UpdateMomentType UpdateMoment { get; set; }
         public bool FollowPosition { get; set; }
