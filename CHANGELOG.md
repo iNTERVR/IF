@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [0.7.0] - 2020-08-15
+
+### Added
+
+- Bind applicable systems to InterVR.IF.Glove.Systems
+- Check installers at bootstrapping in base intstall
+
 ## [0.6.0] - 2020-08-15
 
 ### Changed

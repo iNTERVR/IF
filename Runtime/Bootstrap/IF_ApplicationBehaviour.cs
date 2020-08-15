@@ -16,20 +16,8 @@ namespace InterVR.IF
                 "InterVR.IF.VR.Systems",
                 "InterVR.IF.VR.ViewResolvers");
             Container.BindApplicableSystems(
-                "InterVR.IF.VR.GLOVE.Systems",
-                "InterVR.IF.VR.GLOVE.ViewResolvers");
-        }
-
-        protected override void LoadModules()
-        {
-            base.LoadModules();
-
-            Container.LoadModule<IF_ToolModules>();
-        }
-
-        protected override void LoadPlugins()
-        {
-            base.LoadPlugins();
+                "InterVR.IF.Glove.Systems",
+                "InterVR.IF.Glove.ViewResolvers");
         }
     }
 }
