@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [0.8.0] - 2020-08-15
+
+### Added
+
+- Add bind applicable systems InterVR.IF.Glove.Plugin.Manus.Systems and InterVR.IF.VR.Plugin.Steam
+- Add check installers at bootstrapping in base intstall
+
 ## [0.7.0] - 2020-08-15
 
 ### Added
