@@ -1,5 +1,6 @@
 ﻿using EcsRx.Infrastructure.Extensions;
 using EcsRx.Zenject;
+using InterVR.IF.Events;
 using InterVR.IF.Modules;
 using UnityEngine;
 
@@ -24,6 +25,11 @@ namespace InterVR.IF
             Container.BindApplicableSystems(
                 "InterVR.IF.Glove.Plugin.Manus.Systems",
                 "InterVR.IF.Glove.Plugin.Manus.ViewResolvers");
+        }
+
+        protected override void ApplicationStarted()
+        {
+            this.EventSystem.Publish(new IF_ApplicationStartedEvent() { });
         }
     }
 }
