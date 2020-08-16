@@ -14,6 +14,9 @@ namespace InterVR.IF
             base.BindSystems();
 
             Container.BindApplicableSystems(
+                "InterVR.IF.Systems",
+                "InterVR.IF.ViewResolvers");
+            Container.BindApplicableSystems(
                 "InterVR.IF.VR.Systems",
                 "InterVR.IF.VR.ViewResolvers");
             Container.BindApplicableSystems(
