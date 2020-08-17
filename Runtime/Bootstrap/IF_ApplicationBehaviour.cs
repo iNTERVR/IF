@@ -26,8 +26,8 @@ namespace InterVR.IF
                 "InterVR.IF.VR.Plugin.Steam.Systems",
                 "InterVR.IF.VR.Plugin.Steam.ViewResolvers");
             Container.BindApplicableSystems(
-                "InterVR.IF.VR.Glove.Plugin.Manus.Systems",
-                "InterVR.IF.VR.Glove.Plugin.Manus.ViewResolvers");
+                "InterVR.IF.VR.Glove.Plugin.SteamVRManus.Systems",
+                "InterVR.IF.VR.Glove.Plugin.SteamVRManus.ViewResolvers");
         }
 
         protected override void ApplicationStarted()
