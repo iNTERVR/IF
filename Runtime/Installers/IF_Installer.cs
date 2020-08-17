@@ -17,9 +17,9 @@ namespace InterVR.IF.Installer
             Container.BindInstance(settings).IfNotBound();
 
             checkInstaller("intervr.if.vr");
+            checkInstaller("intervr.if.vr.glove");
             checkInstaller("intervr.if.vr.plugin.steam");
-            checkInstaller("intervr.if.glove");
-            checkInstaller("intervr.if.glove.plugin.manus");
+            checkInstaller("intervr.if.vr.glove.plugin.manus");
         }
 
         void checkInstaller(string path)
