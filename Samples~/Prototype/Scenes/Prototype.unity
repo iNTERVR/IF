@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -97,9 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 6a4d86217340a4e4a90ad63542d33a34,
-    type: 2}
-  m_UseShadowmask: 1
+  m_LightingDataAsset: {fileID: 112000000, guid: 6a4d86217340a4e4a90ad63542d33a34, type: 2}
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -119,6 +118,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -293,7 +294,6 @@ GameObject:
   - component: {fileID: 1075150230}
   - component: {fileID: 1075150229}
   - component: {fileID: 1075150228}
-  - component: {fileID: 1075150233}
   - component: {fileID: 1075150232}
   m_Layer: 0
   m_Name: Rotate Cube
@@ -330,6 +330,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -354,6 +355,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1075150230
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -388,20 +390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 441e8de363ba5bc4d82440f97726bf72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 30
---- !u!114 &1075150233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075150227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79bcb4af4db88c94a82dab9e20ecb6e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   CollectionId: 0
+  Speed: 30
 --- !u!1 &1270271500
 GameObject:
   m_ObjectHideFlags: 0
