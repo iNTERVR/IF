@@ -20,7 +20,7 @@
     "url": "https://github.com/iNTERVR"
   },
   "dependencies": {
-    "com.intervr.ts.ecsrx.unity": "1.6.0"
+    "com.intervr.ts.ecsrx.unity": "1.7.0"
   },
   "files": [
     "*.md",
