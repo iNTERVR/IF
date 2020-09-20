@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [1.2.1] - 2020-09-20
+
+### Update
+
+- Dependency: Tech Stack EcsRx for Unity
+
 ## [1.2.0] - 2020-09-12
 
 ### Update
