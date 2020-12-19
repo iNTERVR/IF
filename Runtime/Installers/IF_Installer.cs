@@ -20,6 +20,7 @@ namespace InterVR.IF.Installer
             checkInstaller("intervr.if.vr.glove");
             checkInstaller("intervr.if.vr.plugin.steam");
             checkInstaller("intervr.if.vr.glove.plugin.steamvrmanus");
+            checkInstaller("intervr.if.vr.glove.plugin.steamvrhifive");
         }
 
         void checkInstaller(string path)
