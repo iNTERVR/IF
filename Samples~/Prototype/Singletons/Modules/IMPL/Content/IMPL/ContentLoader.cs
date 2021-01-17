@@ -4,7 +4,6 @@ using EcsRx.Extensions;
 using InterVR.IF.Extensions;
 using Prototype.Defines;
 using Prototype.Events;
-using Prototype.Modules;
 using Prototype.Plugins.PrototypeContent;
 using System;
 using System.Collections;
@@ -12,7 +11,7 @@ using UniRx;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace InterVR.IF.Modules
+namespace Prototype.Modules
 {
     public class ContentLoader : IContentLoader
     {

@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [2.0.2] - 2021-01-17
+
+### Fixed
+
+- namespace fixed
+
 ## [2.0.1] - 2021-01-17
 
 ### Changed
