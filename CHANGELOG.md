@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [2.0.0] - 2021-01-17
+
+### Update
+
+- Architecture reset
+- Sample reset
+
 ## [1.2.2] - 2020-12-19
 
 ### Added
