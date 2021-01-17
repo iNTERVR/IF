@@ -2,7 +2,7 @@
   "name": "com.intervr.if",
   "displayName": "iNTERVR IF",
   "description": "InterFramework of iNTERVR",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "unity": "2020.2",
   "keywords": [],
   "homepage": "https://github.com/iNTERVR/IF#readme",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iNTERVR/IF.git#upm"
+    "url": "git+https://github.com/iNTERVR/IF.git"
   },
   "license": "MIT",
   "author": {

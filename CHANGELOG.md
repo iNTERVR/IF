@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [2.0.1] - 2021-01-17
+
+### Changed
+
+- package url
+
 ## [2.0.0] - 2021-01-17
 
 ### Update
