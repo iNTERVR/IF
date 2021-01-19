@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [2.1.0] - 2021-01-19
+
+### Added
+
+- AOT
+
+### Updated
+
+- Sample reset
+
 ## [2.0.2] - 2021-01-17
 
 ### Fixed

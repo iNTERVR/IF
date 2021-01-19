@@ -2,6 +2,7 @@
 using EcsRx.Events;
 using EcsRx.Extensions;
 using InterVR.IF.Extensions;
+using InterVR.IF.Modules;
 using Prototype.Defines;
 using Prototype.Events;
 using Prototype.Plugins.PrototypeContent;

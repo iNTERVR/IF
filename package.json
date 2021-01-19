@@ -2,7 +2,7 @@
   "name": "com.intervr.if",
   "displayName": "iNTERVR IF",
   "description": "InterFramework of iNTERVR",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "unity": "2020.2",
   "keywords": [],
   "homepage": "https://github.com/iNTERVR/IF#readme",
@@ -20,7 +20,7 @@
     "url": "https://github.com/iNTERVR"
   },
   "dependencies": {
-    "com.intervr.ts.ecsrx.unity": "1.9.2"
+    "com.intervr.ts.ecsrx.unity": "2.0.0"
   },
   "files": [
     "*.md",
