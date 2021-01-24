@@ -1,12 +1,17 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [2.1.3] - 2021-01-24
+
+### Updated
+
+- Sample code
+
 ## [2.1.2] - 2021-01-24
 
 ### Updated
 
 - Dependency: Tech Stack EcsRx for Unity
-
 
 ## [2.1.1] - 2021-01-24
 

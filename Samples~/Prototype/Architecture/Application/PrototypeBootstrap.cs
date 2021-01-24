@@ -29,6 +29,8 @@ namespace Prototype
             {
                 contentLoader.LoadContentAsync(settings.StartContent).Subscribe(y =>
                 {
+                    this.Started = true;
+
                     EventSystem.Publish(new IF_ApplicationStartedEvent()
                     {
                     });
