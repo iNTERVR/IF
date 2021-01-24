@@ -11,17 +11,17 @@ namespace Prototype.Components
         public ContentType Type { get; set; }
     }
 
-    public class ContentInfoComponent : RegisterAsEntity, IConvertToEntity
+    public class ContentInfoComponent : RegisterAsEntity
     {
         public ContentType Type;
 
-        public override void Convert(IEntity entity, IComponent component = null)
+        public override void Convert(IEntity entity)
         {
-            var c = component == null ? new ContentInfo() : component as ContentInfo;
+            var component = new ContentInfo();
 
-            c.Type = Type;
+            component.Type = Type;
 
-            entity.AddComponentSafe(c);
+            entity.AddComponentSafe(component);
 
             Destroy(this);
         }
