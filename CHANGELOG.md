@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this package will be documented in this file.
 
+## [2.1.1] - 2021-01-24
+
+### Changed
+
+- Bootstrap async initialize
+
 ## [2.1.0] - 2021-01-19
 
 ### Added

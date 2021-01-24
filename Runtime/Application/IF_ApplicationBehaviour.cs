@@ -30,11 +30,12 @@ namespace InterVR.IF
         protected override IEnumerator ApplicationStartedAsync()
         {
             yield return Container.InitializeModules();
-            yield return base.ApplicationStartedAsync();
+            ApplicationStarted();
         }
 
         protected override void ApplicationStarted()
         {
+            Started = true;
             EventSystem.Publish(new IF_ApplicationStartedEvent() { });
         }
 
